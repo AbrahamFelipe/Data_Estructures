@@ -10,7 +10,7 @@ import java.util.Arrays;
  */
 public class StackArray<T> implements Stack<T>{
     
-    private static final int N = 3;
+    private static final int N = 3;//valor por defecto
     private int top;
     private T[] sarray;
     

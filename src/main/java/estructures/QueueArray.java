@@ -14,6 +14,7 @@ public class QueueArray<T> implements Queue<T>{
         array = (T[]) new Object[N];
     }
     
+    
     public QueueArray(){
         this(4); //crea un queue de tamaño 4 por defecto
     }
@@ -54,6 +55,12 @@ public class QueueArray<T> implements Queue<T>{
         return count >= N;
     }
     
+    
+    //me da el numero de elementos que tengo en el queve
+    public int getCount() {
+        return count;
+    }
+    
     public void print(){
         
         for(int i=0; i<count;i++){
@@ -62,11 +69,6 @@ public class QueueArray<T> implements Queue<T>{
         System.out.println("");
         
     }
-    
-  
-    
-    
-    
-    
+
     
 }

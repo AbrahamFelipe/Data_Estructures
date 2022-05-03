@@ -12,10 +12,6 @@ public class QueueRef<T> implements Queue<T> {
     private Node<T> front, rear;
     private int count;
     
-    
-    public int getCount() {//da el numero total de elementos que tiene el queue
-        return count;
-    }
 
     public QueueRef() {
         front = null;
@@ -24,7 +20,7 @@ public class QueueRef<T> implements Queue<T> {
         
     }
     
-    
+
 
     @Override
     public void enqueue(T data) {
@@ -74,6 +70,11 @@ public class QueueRef<T> implements Queue<T> {
             ref = ref.getNext();
         }
         System.out.println("");
+    }
+    
+    
+    public int getCount() {//da el numero total de elementos que tiene el queue
+        return count;
     }
     
 }
