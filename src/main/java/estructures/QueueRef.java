@@ -10,6 +10,10 @@ package estructures;
  */
 public class QueueRef<T> implements Queue<T> {
     private Node<T> front, rear;
+
+    public T getFront() {
+        return front.getData();
+    }
     private int count;
     
 
@@ -76,5 +80,6 @@ public class QueueRef<T> implements Queue<T> {
     public int getCount() {//da el numero total de elementos que tiene el queue
         return count;
     }
+    
     
 }

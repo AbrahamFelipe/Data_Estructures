@@ -8,7 +8,7 @@ package estructures;
  *
  * @author ABRAHAM
  */
-public class LinkedListOrdered implements List {
+public class LinkedListOrdered extends List {
     private Node<Integer> head;
     
     public LinkedListOrdered(){

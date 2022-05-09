@@ -8,7 +8,7 @@ package estructures;
  *
  * @author ABRAHAM
  */
-public class ListArray implements List {
+public class ListArray extends List {
     
     private int N, count, position;
 

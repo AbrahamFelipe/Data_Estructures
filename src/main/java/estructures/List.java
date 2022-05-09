@@ -8,14 +8,14 @@ package estructures;
  *
  * @author ABRAHAM
  */
-public interface List {
+public  abstract class List<T> {
     
-    public Boolean empty();
-    public Boolean full();
-    public Boolean delete(int item);
-    public Boolean insert(int item);
-    public Boolean search(int item);
-    public void output();
+    public abstract Boolean empty();
+    public abstract Boolean full();
+    public  abstract Boolean delete(T item);
+    public abstract Boolean insert(T item);
+    public  abstract Boolean search(T item);
+    public abstract void output();
     
     
 }

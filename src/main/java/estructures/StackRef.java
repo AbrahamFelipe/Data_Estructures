@@ -9,6 +9,10 @@ package estructures;
 public class StackRef<T>  implements  Stack<T>{
     
     private Node<T> top;
+
+    public T getTop() {
+        return top.getData();
+    }
     private int N;
 
     //Da el numero de elementos que tiene el Stack
