@@ -29,7 +29,6 @@ public class Conteo {
         int[] logsInt = new int[logs.length];
         for(int i=0; i<logs.length;i++){
             logsInt[i] = Integer.parseInt(logs[i]);
-        
         }
         //pasar array a arreglo bidimensional
         int[][] logsBidi = new int[logsInt.length/2][2];
